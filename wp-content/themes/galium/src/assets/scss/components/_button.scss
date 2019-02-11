@@ -1,0 +1,44 @@
+.button {
+  padding: 1rem 2rem;
+  background: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: none;
+  color: $white;
+  text-decoration: none;  
+  align-self: flex-start;
+}
+
+
+.button--drx {
+  @extend .button;
+  background: transparent;
+  border: 5px solid $white;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-self: center;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.button--doc {
+  @extend .button;
+  color: $primary;
+  background: transparent;
+  border: 4px solid $primary;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.button--page-doc {
+  background: $primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0;
+}

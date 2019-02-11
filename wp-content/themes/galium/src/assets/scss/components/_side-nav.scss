@@ -1,0 +1,16 @@
+.side-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & .menu-item {
+    list-style: none;
+    padding: .6rem 1rem;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  // visibility: hidden;
+  display: none !important;
+}

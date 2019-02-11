@@ -1,0 +1,144 @@
+/* offside-js 1.4.0 26-03-2018
+* Minimal JavaScript kit without library dependencies to push things off-canvas using just class manipulation
+* https://github.com/toomuchdesign/offside.git
+*
+* by Andrea Carraro
+* Available under the MIT license
+*/
+
+/* Off-canvas element CSS */
+
+.offside {
+  position: absolute;
+  /* Does not play well with some old browsers (see: README) */
+  width: 250px;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */
+  left: -250px;
+}
+
+/* Left off-canvas elements default status: out of the page */
+
+.offside--left {
+  left: -250px;
+}
+
+/* Right off-canvas elements default status: out of the page */
+
+.offside--right {
+  left: auto;
+  right: -250px;
+}
+
+/*
+ * Left off-canvas element is open:
+ * - off-canvas element slides in
+ * - container elements slides out
+ */
+
+.offside--left.is-open, .offside-js--is-left .offside-sliding-element {
+  -webkit-transform: translate3d(250px, 0, 0);
+  -moz-transform: translate3d(250px, 0, 0);
+  -ms-transform: translate3d(250px, 0, 0);
+  -o-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
+}
+
+/*
+ * Right off-canvas element is open:
+ * - off-canvas element slides in
+ * - container elements slides out
+ */
+
+.offside--right.is-open, .offside-js--is-right .offside-sliding-element {
+  -webkit-transform: translate3d(-250px, 0, 0);
+  -moz-transform: translate3d(-250px, 0, 0);
+  -ms-transform: translate3d(-250px, 0, 0);
+  -o-transform: translate3d(-250px, 0, 0);
+  transform: translate3d(-250px, 0, 0);
+}
+
+/* Elements Transitions */
+
+.offside-js--interact {
+  .offside, .offside-sliding-element {
+    transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+    /* improves performance issues on mobile*/
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+  }
+}
+
+/* Body overflow */
+
+.offside-js--init {
+  overflow-x: hidden;
+}
+
+/* Fallback movements for browser not supporting CSS 3d Transitions
+----------------------------------------------- */
+
+/* Modernizr false negative csstransforms3d fix, reset CSS 3d Transitions */
+
+.no-csstransforms3d {
+  .offside {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .offside-sliding-element {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .offside--left.is-open {
+    left: 0;
+  }
+  .offside--right.is-open {
+    right: 0;
+  }
+  > {
+    .offside-js--is-left .offside-sliding-element {
+      right: -250px;
+    }
+    .offside-js--is-right .offside-sliding-element {
+      left: -250px;
+    }
+  }
+}
+
+/* Element is open: off-canvas element slides in */
+
+/* Element is open: container elements slide out */
+
+
+
+// CUSTOM CSS
+
+.offside__inner {
+  margin: 0 auto;
+}
+
+.page-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.offside-js--is-open .page-overlay {
+  cursor: pointer;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.offside-menu {
+  background: $white;
+}

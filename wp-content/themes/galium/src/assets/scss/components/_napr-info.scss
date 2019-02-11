@@ -1,0 +1,40 @@
+.napr-info {
+
+  margin-bottom: 4rem;
+
+  &__inner {
+    display: flex;
+    background: $light-gray;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: $white;
+    margin-right: 1rem;
+  }
+}
+
+// TABLE
+
+.supsystic-tables-wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  table {
+    border: none !important;
+  }
+  tr {
+    border: none !important;
+  }
+  td {
+    border: none !important;
+    padding: 1rem !important;
+  }
+
+  td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+  }
+}

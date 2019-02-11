@@ -1,0 +1,92 @@
+// TOP NAV
+.top-nav {
+  background: $black;
+  color: $white;
+
+  &__contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 1rem;
+  }
+
+  &__icon {
+    color: $primary;
+  }
+}
+
+
+@include media-breakpoint-up(md) { 
+  .top-nav {
+    display: none;
+  }
+}
+
+// LOGO
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+
+// MAIN NAV
+
+.main-nav-wrp {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav {
+
+  border-bottom: 1px solid $light-gray;
+
+  &__contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;    
+  }
+
+  &__item {
+    margin-right: 1rem;
+  }
+
+  &__icon {
+    color: $primary;
+  }
+
+  &__btnholder {
+    margin-left: auto;
+  }
+
+  &__burger {
+    background: none;
+    cursor: pointer;
+    border: 2px solid $black;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include media-breakpoint-down(md) { 
+  .main-nav__contacts {
+    display: none;
+  }
+}
+
+
+.overflow-y {
+  overflow-y: hidden;
+}

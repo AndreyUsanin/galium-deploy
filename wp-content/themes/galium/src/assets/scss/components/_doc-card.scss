@@ -1,0 +1,115 @@
+.doc-card {
+
+  border: 1px solid $light-gray;
+  border-radius: 10px;
+
+  &__rel {
+    position: relative;
+
+    &:before {
+      background: linear-gradient(to bottom, rgba(0, 105, 240, 0), rgba(25, 30, 30, 0.6));
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+  }
+
+  &__imageholder {
+    min-width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  &__name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    color: $white;
+    font-weight: normal;
+  }
+
+  &__info {
+    padding: 1rem;
+  }
+
+  &__spec {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__cat {
+    color: $gray;
+    font-weight: bold;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+
+
+// SLIDER
+
+.doc-slider-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@include media-breakpoint-down(md) {
+  .doc-slider-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ }
+
+
+.doc-slider {
+
+  &__controls {
+
+    // margin-left: auto;
+
+
+
+    button {
+      background: none;
+      border: 1px solid $secondary;
+      padding: 1rem 1.6rem;
+      cursor: pointer;
+      outline: none;
+      color: $secondary;
+      font-size: 1.2rem;
+
+      &:hover .doc-slider__icon {
+          color:$secondary;
+      }
+    }
+
+    button:first-child {
+      border-right: 0;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+
+    button:last-child {
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+  }
+
+}

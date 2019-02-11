@@ -1,0 +1,51 @@
+.footer-area {
+  background: $black;
+  color: $white;  
+  padding: 4rem 0;
+}
+
+
+.footer {
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--soc {
+      display: flex;
+    }
+  }
+
+  &__item {
+    padding: 1rem 0;
+    border-bottom: 1px solid $secondary;
+
+    &--schedule {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__icon {
+    margin-right: .5rem;
+  }  
+
+  &__socitem {
+    margin-right: 1rem;
+    background: $white;
+    border-radius: 100%;
+
+    a {
+      display: flex;
+      color: $black;
+      padding: 1rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+
+}

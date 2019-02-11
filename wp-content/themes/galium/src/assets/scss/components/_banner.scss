@@ -1,0 +1,22 @@
+.page-banner {
+  color: $white;
+
+  &__left {
+    padding: 3rem;
+  }
+
+  &__title {
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    padding: .5rem 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

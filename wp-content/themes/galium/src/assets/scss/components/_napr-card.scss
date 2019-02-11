@@ -1,0 +1,75 @@
+.napr-card {
+  background: $white;
+  padding: 2em;
+  box-shadow: 0 2px 10px rgba(25, 30, 30, 0.1);
+  cursor: default;
+
+  &:hover {
+    // box-shadow: 0 4px 20px rgba(25, 30, 30, 0.2);
+  }
+
+&__title {
+  font-weight: bold;
+  font-size: ms(2);
+  padding: 0;
+  margin: 0;
+}
+
+&__iconbox {
+
+}
+
+
+&__icon {
+  font-size: 3.5rem;
+  position: relative;
+  color: $secondary;
+
+  &::before {
+    z-index: 2;
+    position: relative;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: lighten($secondary, 45%);
+    opacity: 0.9;
+    left: -12px;
+    bottom: -12px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+// &__icon-small {
+//   padding-right: .3em;
+// }
+
+&__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: .5rem;
+
+    a {
+      color: $secondary;
+    }
+  }
+}
+
+
+// &__footer {
+//   display: flex;
+// }
+
+// &__link {
+//   margin-right: 1em;
+// }
+
+}

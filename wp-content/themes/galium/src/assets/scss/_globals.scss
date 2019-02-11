@@ -1,0 +1,21 @@
+// COLORS
+
+$primary: #E40814;
+$secondary: #4B88A2;
+$aux: #75C6E8;
+$white: #ffffff;
+$black: #252627;
+$gray: #9B9C9C;
+$light-gray: #EBEBEB;
+$dark-gray: #606161;
+$medium-gray: #606161;
+
+
+a {
+  color: $secondary;
+
+  &:hover {
+    color: darken($secondary, 20%);
+    text-decoration: none;
+  }
+}

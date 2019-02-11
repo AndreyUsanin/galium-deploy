@@ -1,0 +1,51 @@
+input {
+  border: 1px solid $gray;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    padding: 1rem;
+    border: 1px solid $gray;
+
+    &:focus,
+    &:active {
+      border: 1px solid $dark-gray;
+    }
+  }
+
+  &__select {
+    padding: 1rem;
+    border: 1px solid $gray;
+
+
+    &:focus,
+    &:active {
+      border: 1px solid $dark-gray;
+    }
+  }
+}
+
+
+.wpcf7-form-control {
+  padding: 1.2rem;
+  border: 1px solid $gray;
+  min-width: 100%;
+
+  &:focus,
+  &:active {
+    border: 1px solid $dark-gray;
+  }
+}
+
+.wpcf7-submit {
+  border: none;
+}
