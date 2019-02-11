@@ -39,7 +39,7 @@ if(file_exists(dirname(__FILE__) . './local.php')) {
 	define('DB_NAME', 'u0173664_galiumdb');
 
 	/** Имя пользователя MySQL */
-	define('DB_USER', 'u0173664_galiumdb');
+	define('DB_USER', 'u0173664_galiumd');
 
 	/** Пароль к базе данных MySQL */
 	define('DB_PASSWORD', '4n1zA*%P');
@@ -49,16 +49,7 @@ if(file_exists(dirname(__FILE__) . './local.php')) {
 }
 
 
-	define('DB_NAME', 'u0173664_galiumdb');
 
-
-	define('DB_USER', 'u0173664_galiumdb');
-
-	/** Пароль к базе данных MySQL */
-	define('DB_PASSWORD', '4n1zA*%P');
-
-	/** Имя сервера MySQL */
-	define('DB_HOST', 'localhost');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');
