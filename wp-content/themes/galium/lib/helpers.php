@@ -35,4 +35,3 @@ function _themename_readmore_link() {
    echo '</a>';
 }
 ?>
-
