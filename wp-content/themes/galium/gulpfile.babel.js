@@ -26,6 +26,10 @@ const paths = {
 		src: 'src/assets/images/**/*.{jpg,jpeg,png,svg,gif}',
 		dest: 'dist/assets/images'
 	},
+	fonts: {
+		src: 'src/assets/fonts/**/*.{eot,svg,ttf,woff}',
+		dest: 'dist/assets/images'
+	},
 	scrips: {
 		src: ['src/assets/js/bundle.js','src/assets/js/admin.js'],
 		dest: 'dist/assets/js'
@@ -83,11 +87,17 @@ export const images = () => {
 		.pipe(gulp.dest(paths.images.dest));
 }
 
+export const fonts = () => {
+	return gulp.src(paths.fonts.src)
+		.pipe(gulp.dest(paths.fonts.dest));
+}
+
 export const watch = () => {
 	gulp.watch('src/assets/scss/**/*.scss', styles);
 	gulp.watch('src/assets/js/**/*.js', gulp.series(scripts, reload));
 	gulp.watch('**/*.php', reload);
 	gulp.watch(paths.images.src, gulp.series(images, reload));
+	gulp.watch(paths.fonts.src, gulp.series(fonts, reload));
 	gulp.watch(paths.other.src, gulp.series(copy, reload));
 } 
 
@@ -133,7 +143,7 @@ export const compress = () => {
 		.pipe(gulp.dest(paths.package.dest));
 }
 
-export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, copy), serve, watch);
+export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, fonts, copy), serve, watch);
 export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));
 export const bundle = gulp.series(build,compress);
 

@@ -14,10 +14,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.5",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -31,11 +31,11 @@
     "gulp-zip": "^4.2.0",
     "modularscale-sass": "^3.0.8",
     "vinyl-named": "^1.1.0",
-    "webpack-stream": "^5.1.1",
-    "yargs": "^12.0.2"
+    "webpack-stream": "^5.2.1",
+    "yargs": "^12.0.5"
   },
   "dependencies": {
-    "badger-accordion": "^1.2.0",
+    "badger-accordion": "^1.2.2",
     "jquery": "^3.3.1",
     "micromodal": "^0.3.2",
     "offside-js": "^1.4.0",

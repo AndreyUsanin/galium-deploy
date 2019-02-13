@@ -122,7 +122,6 @@
       <span class="icon-info-circle napr-info__icon"></span>
       <p>
         <?php echo get_field('page_info'); ?>
-        <?php echo get_field('test'); ?>
       </p>
     </div>
   </div>
