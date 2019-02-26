@@ -6,73 +6,9 @@ import offside from "offside-js";
 import MicroModal from 'micromodal';
 import Rellax from 'rellax';
 import BadgerAccordion from 'badger-accordion';
-// import './docs.js/index.js';
 
 
-
-
-
-
-// DOCS MODAL
-
-
-
-const docModalBtn = document.querySelectorAll('.button--page-doc');
-const modalContent = document.querySelector('.modal__content');
-let docName;
-
-
-
-
-
-docModalBtn.forEach(elem => {
-  elem.addEventListener('click', (e) => {
-    docName = elem.dataset.doc;
-    displayDoc(docName);
-    e.preventDefault();
-  });
-});
-
-
-// function showDoc(docName) {
-
-  
-//   switch (docName) {
-//     case 'belousova':
-//       displayDoc(belousova)
-//       break;
-//     case 'lushpanova':
-//       modalContent.innerHTML = `
-//       <div>
-//       <img src="" />
-//       <h3>Лушпанова Светлана Аркадьевна</h3>
-//     </div>`;
-//       break;
-//   }
-// }
-
-
-
-
-function displayDoc(doc){
-
-  console.log(doc);
-
-  fetch('http://localhost/wp-content/themes/galium/dist/assets/js/docs.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    data => data;
-  });
-
-
-  modalContent.innerHTML = `
-  <div>
-  <img src="" />
-  <h3>${data.id.doc}</h3>
-  `;
-}
+import './components/docs';
 
 
 
