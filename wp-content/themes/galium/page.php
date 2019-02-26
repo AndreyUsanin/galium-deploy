@@ -65,6 +65,7 @@
           // $height = $fullImage['sizes'][ $fullSize . '-height' ];
             
             ?>
+            
         <!-- slide -->
             <div class="slide">
               <div class="doc-card-page">
@@ -94,13 +95,15 @@
                   </div>
                 <!-- end content -->
                   <div class="doc-card-page__footer">
-                      <a href="#" class="button button--page-doc doc-card-page__button"  data-micromodal-trigger="modal">Запись на прием</a>
+                      <a href="#" class="button button--page-doc doc-card-page__button"  data-micromodal-trigger="modal" data-doc="<?php echo the_sub_field('page_doc_data'); ?>">Запись на прием</a>
                       <a href="tel:<?php echo get_field('header_phone', 'options'); ?>" class="doc-card-page__phone" >Запись по телефону:  <?php echo get_field('header_phone', 'options'); ?></a>
                   </div>
                 </div>
               </div>
             </div>
           <!-- end slide -->
+
+
             <?php            
             endwhile;
 
@@ -128,24 +131,28 @@
 </div>
 
 
-
-<div id="modal" class="modal micromodal-slide" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container">
-      <div tabindex="-1" data-micromodal-close>
-        <div role="dialog" aria-modal="true" aria-labelledby="modal-title">
-          <header class="modal__header">
-            <h2 id="modal-title">Запись на прием</h2>
-            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-          </header>
-          <div class="modal__content" id="modal-content">
-             <?php echo get_field('page_form'); ?>
+    
+          <!-- modal -->
+    <div id="modal" class="modal micromodal-slide" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container">
+        <div tabindex="-1" data-micromodal-close>
+          <div role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <header class="modal__header">
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <div class="modal__content" id="modal-content">
+            
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  <!-- end modal -->
+ 
+
+
 
 <section class="price-area">
   <div class="container">

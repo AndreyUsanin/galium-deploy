@@ -21,6 +21,7 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 
+
 if(file_exists(dirname(__FILE__) . './local.php')) {
 
 	define('DB_NAME', 'galium');
@@ -33,6 +34,11 @@ if(file_exists(dirname(__FILE__) . './local.php')) {
 	
 	/** Имя сервера MySQL */
 	define('DB_HOST', 'localhost');
+
+	
+define( 'WP_HOME', 'http://localhost' );
+define( 'WP_SITEURL', 'http://localhost' );
+
 	
 } else {
 	/** Имя базы данных для WordPress */
@@ -46,6 +52,8 @@ if(file_exists(dirname(__FILE__) . './local.php')) {
 
 	/** Имя сервера MySQL */
 	define('DB_HOST', 'localhost');
+
+
 }
 
 

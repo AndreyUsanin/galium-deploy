@@ -22,7 +22,7 @@
 
 .modal__container {
   background-color: #fff;
-  padding: 2rem;
+  // padding: 2rem;
   max-width: 500px;
   max-height: 100vh;
   border-radius: 4px;
@@ -32,8 +32,7 @@
 
 .modal__header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
 }
 
 .modal__title {
@@ -50,6 +49,8 @@
   background: transparent;
   border: 0;
   outline: none;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .modal__header .modal__close:before {
@@ -59,8 +60,6 @@
 }
 
 .modal__content {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
 }

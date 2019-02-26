@@ -1,10 +1,78 @@
 import $ from 'jquery';
-import { tns } from '../../../node_modules/tiny-slider/src/tiny-slider';
+import {
+  tns
+} from '../../../node_modules/tiny-slider/src/tiny-slider';
 import offside from "offside-js";
-import MicroModal from 'micromodal'; 
-import Rellax from 'rellax'; 
+import MicroModal from 'micromodal';
+import Rellax from 'rellax';
 import BadgerAccordion from 'badger-accordion';
-import './components/docs.js';
+// import './docs.js/index.js';
+
+
+
+
+
+
+// DOCS MODAL
+
+
+
+const docModalBtn = document.querySelectorAll('.button--page-doc');
+const modalContent = document.querySelector('.modal__content');
+let docName;
+
+
+
+
+
+docModalBtn.forEach(elem => {
+  elem.addEventListener('click', (e) => {
+    docName = elem.dataset.doc;
+    displayDoc(docName);
+    e.preventDefault();
+  });
+});
+
+
+// function showDoc(docName) {
+
+  
+//   switch (docName) {
+//     case 'belousova':
+//       displayDoc(belousova)
+//       break;
+//     case 'lushpanova':
+//       modalContent.innerHTML = `
+//       <div>
+//       <img src="" />
+//       <h3>Лушпанова Светлана Аркадьевна</h3>
+//     </div>`;
+//       break;
+//   }
+// }
+
+
+
+
+function displayDoc(doc){
+
+  console.log(doc);
+
+  fetch('http://localhost/wp-content/themes/galium/dist/assets/js/docs.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    data => data;
+  });
+
+
+  modalContent.innerHTML = `
+  <div>
+  <img src="" />
+  <h3>${data.id.doc}</h3>
+  `;
+}
 
 
 
@@ -21,13 +89,13 @@ const accordion = new BadgerAccordion(accordionDomNode);
 
 
 if (document.querySelector(".rellax")) {
-var rellax = new Rellax('.rellax', {
-  speed: -2,
-  center: false,
-  // wrapper: '.rellax-wrp',
-  round: true,
-  vertical: true,
-});
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    // wrapper: '.rellax-wrp',
+    round: true,
+    vertical: true,
+  });
 }
 
 
@@ -85,13 +153,13 @@ var myOffside = offside(".offside-menu", {
     document.body.classList.add('offside-js--interact');
   },
 
-  afterOpen: function(){
+  afterOpen: function () {
     document.body.classList.add('overflow-y');
-  }, 
+  },
   beforeClose: function () {
 
   },
-  afterClose: function(){
+  afterClose: function () {
     document.body.classList.remove('offside-js--interact');
     document.body.classList.remove('overflow-y');
   },

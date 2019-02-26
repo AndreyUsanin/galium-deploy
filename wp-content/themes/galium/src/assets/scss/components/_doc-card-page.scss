@@ -155,3 +155,29 @@
     opacity: .5;
   }
 }
+
+
+// DOC FORM HEADER
+
+.form-doc {
+  display: flex;
+  background: $light-gray;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  &__image {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__name {
+    padding-left: 2rem;
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+}
+

@@ -44,4 +44,24 @@ function wpcf7_autop_return_false() {
     return false;
 } 
 
+// CURRENT URL
+
+add_action( 'wpcf7_init', 'wpcf7_add_form_tag_current_url' );
+function wpcf7_add_form_tag_current_url() {
+    // Add shortcode for the form [current_url]
+    wpcf7_add_form_tag( 'current_url',
+        'wpcf7_current_url_form_tag_handler',
+        array(
+            'name-attr' => true
+        )
+    );
+}
+
+// Parse the shortcode in the frontend
+function wpcf7_current_url_form_tag_handler( $tag ) {
+    global $wp;
+    $url = home_url();
+    return $url;
+}
+
 ?>
