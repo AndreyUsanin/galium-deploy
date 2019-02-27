@@ -4,7 +4,10 @@ let docName;
 
 
 const patientForm = document.getElementById('patient-form');
-patientForm.addEventListener('submit', validateForm);
+
+if(patientForm) {
+  patientForm.addEventListener('submit', validateForm);
+}
 
 
 
@@ -44,8 +47,6 @@ function validateForm(e) {
     return false;
   }
 
-
-
 }
 
 
@@ -66,10 +67,10 @@ docModalBtns.forEach(btn => {
 
 // FETCH
 function getDoc(doc) {
-
   fetch('../docs.json')
     .then(response => response.json())
     .then(function (data) {
+      console.log(data);
       let docOutput;
       data.forEach(elem => {
         if (elem.id === doc) {
@@ -85,8 +86,8 @@ function getDoc(doc) {
 
 function displayDoc(docOutput) {
   modalContent.innerHTML = `
-    <h3>${docOutput.name}</h3>
-    <img src="${docOutput.imgSrc}"/> 
+    <img class="doc-modal__img" src="${docOutput.imgSrc}"/> 
+    <h3 class="doc-modal__title">${docOutput.name}</h3>
     <input type="hidden" name="Доктор" value="${docOutput.name}" />
   `;
 }

@@ -142,10 +142,13 @@
               <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
             </header>
             <div class="modal__content" id="modal-content">
+
+
+
             <form id="patient-form"  action="https://formspree.io/rvwdude@gmail.com" method="POST" novalidate>
-              <div class="doc-output">              
-              
+              <div class="doc-output">     
               </div>
+              <div class="doc-modal__inner">
               <div class="form-group">
                 <label for="form-name">Ваше имя:</label>
                 <input type="email" class="form-control" id="patient-name" name="Имя пациента" aria-describedby="emailHelp" placeholder="Имя">
@@ -156,7 +159,10 @@
                 <input type="text" class="form-control" id="patient-phone" name="Телефон пациента" placeholder="Номер телефона">
                 <div class="invalid-feedback">Неправильный формат телефона</div> 
               </div>
-              <button type="submit" class="btn btn-primary">Записаться</button>
+              <div class="d-flex w-100">
+                <button type="submit" class="button">Записаться</button>
+              </div>
+              </div>
             </form>
 
             </div>
