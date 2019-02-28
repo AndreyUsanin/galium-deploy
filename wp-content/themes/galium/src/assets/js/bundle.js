@@ -75,7 +75,8 @@ if (document.querySelector(".slider")) {
   var slider = tns({
     navContainer: ".slider-controls",
     navAsThumbnails: true,
-    controls: false
+    controls: false,
+    touch: false
   });
 }
 
