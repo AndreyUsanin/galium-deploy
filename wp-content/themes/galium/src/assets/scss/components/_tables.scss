@@ -1,0 +1,62 @@
+
+// TABLE
+
+.supsystic-tables-wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  table {
+    border: none !important;
+  }
+  tr {
+    border: none !important;
+  }
+  td {
+    border: none !important;
+    padding: 1rem !important;
+  }
+
+  td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 1rem;
+    border: 1px solid $gray;
+
+    &:focus,
+    &:active {
+      border: 1px solid $dark-gray;
+    }
+  }
+
+  select {
+    padding: 1rem;
+    border: 1px solid $gray;
+
+
+    &:focus,
+    &:active {
+      border: 1px solid $dark-gray;
+    }
+  }
+
+  .paginate_button {
+    border: none !important;
+  }
+
+  .paginate_button:hover {
+    background: $gray !important;
+    border: none !important;
+    // color: $black !important;
+  }
+
+  .paginate_button.current {
+    background: $gray !important;
+    border: none !important;
+  }
+
+
+}
+

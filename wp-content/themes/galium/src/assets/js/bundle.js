@@ -45,6 +45,7 @@ if (document.querySelector(".doc-slider")) {
     items: 4,
     gutter: 40,
     controls: true,
+    touch: false,
     controlsContainer: ".doc-slider__controls",
     nav: false,
     responsive: {

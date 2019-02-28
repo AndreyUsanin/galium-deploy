@@ -92,12 +92,13 @@
                         <?php endif; ?>
                       </ul>
                     </div>
+                    <div class="doc-card-page__footer">
+                      <a href="#" class="button button--page-doc"  data-micromodal-trigger="modal" data-doc="<?php echo the_sub_field('page_doc_data'); ?>">Запись онлайн</a>
+                      <a href="tel:<?php echo get_field('header_phone', 'options'); ?>" class="doc-card-page__phone" >или по телефону:  <?php echo get_field('header_phone', 'options'); ?></a>
+                  </div>
                   </div>
                 <!-- end content -->
-                  <div class="doc-card-page__footer">
-                      <a href="#" class="button button--page-doc doc-card-page__button"  data-micromodal-trigger="modal" data-doc="<?php echo the_sub_field('page_doc_data'); ?>">Запись на прием</a>
-                      <a href="tel:<?php echo get_field('header_phone', 'options'); ?>" class="doc-card-page__phone" >Запись по телефону:  <?php echo get_field('header_phone', 'options'); ?></a>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -143,9 +144,9 @@
             </header>
             <div class="modal__content" id="modal-content">
 
-
-
-            <form id="patient-form"  action="https://formspree.io/rvwdude@gmail.com" method="POST" novalidate>
+            
+            <?php echo get_field('page_form'); ?>
+            <!-- <form id="patient-form"  action="https://formspree.io/rvwdude@gmail.com" method="POST" novalidate>
               <div class="doc-output">     
               </div>
               <div class="doc-modal__inner">
@@ -163,7 +164,7 @@
                 <button type="submit" class="button">Записаться</button>
               </div>
               </div>
-            </form>
+            </form> -->
 
             </div>
             </div>

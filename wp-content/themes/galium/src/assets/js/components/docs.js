@@ -1,5 +1,8 @@
-const docModalBtns = document.querySelectorAll('.doc-card-page__button');
+const docModalBtns = document.querySelectorAll('.button--page-doc');
 const modalContent = document.querySelector('.doc-output');
+const hiddenDoc = document.querySelector('.hidden-doc');
+
+
 let docName;
 
 
@@ -41,7 +44,6 @@ function validateForm(e) {
   }
 
   if(validPhone && validName) {
-    console.log(validPhone, validName );
     patientForm.submit();
   } else {
     return false;
@@ -70,7 +72,6 @@ function getDoc(doc) {
   fetch('../docs.json')
     .then(response => response.json())
     .then(function (data) {
-      console.log(data);
       let docOutput;
       data.forEach(elem => {
         if (elem.id === doc) {
@@ -78,6 +79,7 @@ function getDoc(doc) {
         }
       });
       displayDoc(docOutput);
+      console.log(data);
       return data;
     });
 }
@@ -85,10 +87,12 @@ function getDoc(doc) {
 
 
 function displayDoc(docOutput) {
+
+  hiddenDoc.value = docOutput.name;
+
   modalContent.innerHTML = `
     <img class="doc-modal__img" src="${docOutput.imgSrc}"/> 
     <h3 class="doc-modal__title">${docOutput.name}</h3>
-    <input type="hidden" name="Доктор" value="${docOutput.name}" />
   `;
 }
 

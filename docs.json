@@ -13,5 +13,15 @@
     "id": "kaverina",
     "name": "Каверина Галина Николаевна",
     "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/kaverina-150x150.jpg"
+  },
+  {
+    "id": "zaharova",
+    "name": "Захарова Алла Ивановна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/zaharova-150x150.jpg"
+  },
+  {
+    "id": "mohova",
+    "name": "Мохова Наталия Константиновна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/mohova-150x150.jpg"
   }
 ]

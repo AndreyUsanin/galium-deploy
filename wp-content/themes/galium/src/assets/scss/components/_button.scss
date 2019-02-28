@@ -9,7 +9,6 @@
   color: $white;
   text-decoration: none;  
   align-self: flex-start;
-  width: 100%;
 }
 
 
@@ -27,19 +26,27 @@
   }
 }
 
-.button--doc {
-  @extend .button;
-  color: $primary;
-  background: transparent;
-  border: 4px solid $primary;
-  text-transform: uppercase;
-  font-weight: bold;
+// .button--doc {
+//   @extend .button;
+//   color: $primary;
+//   background: transparent;
+//   border: 4px solid $primary;
+//   text-transform: uppercase;
+//   font-weight: bold;
 
-}
+// }
 
 .button--page-doc {
   background: $primary;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 0;
+  text-transform: capitalize;
+  margin-right: 2rem;
+  width: 50%;
+}
+
+
+      
+@include media-breakpoint-down(md) { 
+  .button--page-doc {
+   width: 100%;
+  }
 }
