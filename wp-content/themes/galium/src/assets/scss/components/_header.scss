@@ -90,3 +90,31 @@
 .overflow-y {
   overflow-y: hidden;
 }
+
+
+
+
+.sc {
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  &__item {
+
+    padding: 1rem 0;
+
+    &--schedule {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+
+}

@@ -23,5 +23,60 @@
     "id": "mohova",
     "name": "Мохова Наталия Константиновна",
     "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/mohova-150x150.jpg"
+  },
+  {
+    "id": "rastrigina",
+    "name": "Расстрыгина Людмила Николаевна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/rastrigina-150x150.jpg"
+  },
+  {
+    "id": "temarcev",
+    "name": "Темарцев Александр Александрович",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/temarcev-150x150.jpg"
+  },
+  {
+    "id": "zolotova",
+    "name": "Золотова Людмила Николаевна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/zolotova-ludmila-nikolaevna-e1461925606407-150x150.jpg"
+  },
+  {
+    "id": "batuskina",
+    "name": "Батушкина Валентина Петровна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/batuskina-150x150.jpg"
+  },
+  {
+    "id": "arseneva",
+    "name": "Арсеньева Елена Борисовна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/arseneva-150x150.jpg"
+  },
+  {
+    "id": "lapteva",
+    "name": "Лаптева Анна Анатольевна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/doctor-avatar-150x150.png"
+  },
+  {
+    "id": "goncharova",
+    "name": "Гончарова Татьяна Васильевна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/goncharova-150x150.jpg"
+  },
+  {
+    "id": "yakovlev",
+    "name": "Яковлев Игорь Васильевич",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/yakovlev-150x150.jpg"
+  },
+  {
+    "id": "mackevich",
+    "name": "Мацкевич Маргарита Леонидовна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/mackevich-150x150.jpg"
+  },
+  {
+    "id": "stepanan",
+    "name": "Степанян Людмила Геннадьевна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/stepanan-150x150.jpg"
+  },
+  {
+    "id": "klemina",
+    "name": "Клемина Ольга Владимировна",
+    "imgSrc": "http://галиум.рф/wp-content/uploads/2019/02/doctor-avatar-150x150.png"
   }
 ]

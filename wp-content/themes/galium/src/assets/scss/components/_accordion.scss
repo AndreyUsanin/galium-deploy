@@ -1,0 +1,6 @@
+
+@include media-breakpoint-down(md) { 
+  .badger-accordion__panel {
+    max-height: 100% !important;
+  }
+}

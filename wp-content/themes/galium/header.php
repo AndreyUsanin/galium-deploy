@@ -43,11 +43,31 @@
                         <ul class="main-nav__contacts">
                             <li class="main-nav__item">
                                 <span class="icon-phone main-nav__icon"></span>
-                                <?php echo get_field('header_adress', 'options'); ?>
+                                <?php echo get_field('header_adress', 'options'); ?>                        
+                                
                             </li>
                             <li class="main-nav__item">
                                 <span class="icon-location main-nav__icon"></span>
                                 <?php echo get_field('header_phone', 'options'); ?>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="tt-button">Режим работы</a>        
+                                <div class="tt-content">
+                                    <ul class="sc__list">
+                                        <li class="sc__item sc__item--schedule">
+                                            <span>Пн-Пт:</span>
+                                            <?php echo get_field('schedule', 'options')['pn_pt']; ?>
+                                        </li>
+                                        <li class="sc__item sc__item--schedule">
+                                            <span>Сб:</span>
+                                            <?php echo get_field('schedule', 'options')['sb']; ?>
+                                        </li>
+                                        <li class="sc__item sc__item--schedule">
+                                            <span>Вс:</span> 
+                                            <?php echo get_field('schedule', 'options')['vs']; ?>
+                                        </li>
+                                    </ul>
+                                </div> 
                             </li>
                         </ul>
                         <div class="main-nav__btnholder">

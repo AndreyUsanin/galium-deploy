@@ -35,13 +35,14 @@
                   </li>  
                   <?php endif; ?>
                 </ul>
-              </div>
+              </div>              
+              <div class="doc-card-page__footer">
+                <a href="#" class="button button--page-doc"  data-micromodal-trigger="modal"  data-doc="<?php echo the_field('one_page_doc_data'); ?>">Запись онлайн</a>
+                <a href="tel:<?php echo get_field('header_phone', 'options'); ?>" class="doc-card-page__phone" >или по телефону:  <?php echo get_field('header_phone', 'options'); ?></a>
+            </div>
             </div>
           <!-- end content -->
-            <div class="doc-card-page__footer">
-                <a href="#" class="button button--page-doc doc-card-page__button"  data-micromodal-trigger="modal">Запись на прием</a>
-                <a href="tel:<?php echo get_field('header_phone', 'options'); ?>" class="doc-card-page__phone" >Запись по телефону:  <?php echo get_field('header_phone', 'options'); ?></a>
-            </div>
+
           </div>
         </div>
 

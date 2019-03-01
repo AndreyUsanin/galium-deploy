@@ -133,6 +133,7 @@ endif;
 
 <section>
 <div class="container">
+  <h2>Часто задаваемые вопросы:</h2>
   <dl class="js-badger-accordion">
 <?php
 

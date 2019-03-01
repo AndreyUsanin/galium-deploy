@@ -40,6 +40,7 @@
     "micromodal": "^0.3.2",
     "offside-js": "^1.4.0",
     "rellax": "^1.7.2",
-    "tiny-slider": "^2.9.1"
+    "tiny-slider": "^2.9.1",
+    "tippy.js": "^4.0.3"
   }
 }

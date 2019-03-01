@@ -6,11 +6,21 @@ import offside from "offside-js";
 import MicroModal from 'micromodal';
 import Rellax from 'rellax';
 import BadgerAccordion from 'badger-accordion';
+import tippy from "tippy.js";
 
 
 import './components/docs';
 
+// TIPPY
 
+tippy(".tt-button", {
+  content: document.querySelector(".tt-content"),
+  delay: 50,
+  animation: "scale",
+  animateFill: false,
+  trigger: "click",
+  theme: "light"
+});
 
 
 
