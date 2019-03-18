@@ -45,7 +45,7 @@ define( 'WP_SITEURL', 'http://localhost' );
 	define('DB_NAME', 'u4638186_galiumdb');
 
 	/** Имя пользователя MySQL */
-	define('DB_USER', 'W1e2G1f9');
+	define('DB_USER', 'u4638186_boss');
 
 	/** Пароль к базе данных MySQL */
 	define('DB_PASSWORD', 'W1e2G1f9');
