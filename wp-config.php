@@ -42,13 +42,13 @@ define( 'WP_SITEURL', 'http://localhost' );
 	
 } else {
 	/** Имя базы данных для WordPress */
-	define('DB_NAME', 'u0173664_galiumdb');
+	define('DB_NAME', 'u4638186_galium');
 
 	/** Имя пользователя MySQL */
-	define('DB_USER', 'u0173664_galiumd');
+	define('DB_USER', 'u4638186_boss');
 
 	/** Пароль к базе данных MySQL */
-	define('DB_PASSWORD', '4n1zA*%P');
+	define('DB_PASSWORD', '2R3n5Z3o');
 
 	/** Имя сервера MySQL */
 	define('DB_HOST', 'localhost');
