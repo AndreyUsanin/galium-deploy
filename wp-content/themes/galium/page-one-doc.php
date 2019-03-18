@@ -70,7 +70,6 @@
       <div tabindex="-1" data-micromodal-close>
         <div role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <header class="modal__header">
-            <h2 id="modal-title">Запись на прием</h2>
             <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
           </header>
           <div class="modal__content" id="modal-content">
@@ -84,6 +83,7 @@
 
 <section class="price-area">
   <div class="container">
+  <h2><?php  echo get_field('price_title'); ?></h2>
   <?php echo get_field('price_table'); ?>
   </div>
 </section>

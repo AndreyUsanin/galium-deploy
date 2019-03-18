@@ -149,13 +149,12 @@ window.onload = function () {
 // MICROMODAL
 MicroModal.init();
 
-// if(document.getElementById('modal')) {
+if(document.getElementById('modal')) {
 
-//   document.addEventListener( 'wpcf7submit', function( event ) {
-//     const modal = document.getElementById('modal');
-//     modal.classList.remove('is-open');
-//   }, false );
-// }
+  document.addEventListener( 'wpcf7mailsent', function( event ) {
+    // location = 'http://google.com';
+  }, false );
+}
 
 // document.body.addEventListener('click', function(e){
 

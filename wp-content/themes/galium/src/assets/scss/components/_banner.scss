@@ -12,11 +12,28 @@
 
   &__item {
     padding: .5rem 0;
+
+    span {
+      margin-right: .5rem;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  &__right {
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+  }
+}
+
+
+@include media-breakpoint-down(sm) { 
+  .page-banner__left,  .page-banner__right {
+    min-height: 30vh;
   }
 }

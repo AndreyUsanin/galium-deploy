@@ -179,6 +179,7 @@
 
 <section class="price-area">
   <div class="container">
+    <h2><?php  echo get_field('price_title'); ?></h2>
     <?php if(is_page(43)) : ?>
     <ul class="tabs__nav">
       <li>

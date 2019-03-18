@@ -13,13 +13,21 @@ body {
 
 h1 {
   font-size: ms(4);
+  line-height: 1.2;
+}
+
+
+h2 {
+  font-size: ms(3);
+  line-height: 1.2;
 }
 
 
 @include media-breakpoint-down(md) {
 
   h1 {
-    font-size: ms(4);
+    font-size: ms(3);
   }
+
 
  }
